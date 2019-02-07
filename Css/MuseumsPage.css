@@ -1,0 +1,17 @@
+
+/* For the search bar increasing focus so it increases.*/
+
+ul{
+	list-style: none;
+}
+
+
+div.searchAndCategory {
+
+border-style: solid;
+}
+
+aside.sideContent{
+	padding: 20px;
+	background-color: grey;
+}
