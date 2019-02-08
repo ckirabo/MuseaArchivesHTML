@@ -7,9 +7,23 @@ a:hover {
    background-color: 66cc99;
 }
 
-/*FOR THE SEARCH BAR & CATEGORY WIDGETS*/
-div.searchAndCategory {
+/*For the columns .... Need to make them start at the same level*/
+
+div.columnLeft {
+	padding: 5px;
+	width:65%;
+	float: left;
 }
+
+div.columnRight {
+	padding: 5px;
+	width: 35%;
+	float: right;
+}
+
+
+
+/*FOR THE SEARCH BAR & CATEGORY WIDGETS*/
 
 div.searchWidget {
 	width: 250px;
@@ -61,6 +75,28 @@ ul.categoryList {
 	padding: 5px;
 }
 
+
+
+/* On screens that are less than 1300px wide, make the SIDE CHANGE VIEW */
+@media screen and (max-width:1300px) {
+
+	h1 {
+		text-align: center;
+	}
+	
+     div.columnRight{
+	  width:100%;
+	}
+
+	div.categoryWidget {
+		display: none;
+	}
+
+
+}
+
+
+
 /* On screens that are less than 700px wide, make the SIDE CHANGE VIEW */
 @media screen and (max-width:700px) {
 
@@ -76,6 +112,9 @@ ul.categoryList {
 
 	div.searchWidget a {
 		float: left;
+		position: absolute;
+		top: 10px;
+		left: 15px;
 	}
 
 	/*Change the categories tab to a side nav button!!! that displays options in on overlay*/
@@ -83,8 +122,10 @@ ul.categoryList {
 		display: none;
 	}
 
-	/*div.content {margin-left: 0;}* PAGE CONTEMT!!!!!!!!*/
+	div.columnLeft {margin-left: 0;}
 }
+
+
 
 /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
 @media screen and (max-width:400px) {

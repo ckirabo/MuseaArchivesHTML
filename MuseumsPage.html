@@ -22,63 +22,53 @@
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
              <i class="fa fa-bars"></i>
             </a>
-                <div>
+            </div>
         </nav>
-
-
-
-
         <!------- PAGE CONTENT ------>
         <div class="pageContent">
-            <h1>Museum List</h1>
 
+                         <h1>Museum List</h1>
 
-
-
-            <!------- PAGE CONTENT OF LIFSTS OF MUSEMSSSSSS!!!!! ------>
-
-
-
-
-            <!------- SIDE BAR WIDGETS------>
-            <div class="searchAndCategory" align="right">
-
-
-
-
-
-                <!------- SEACRH BOX CONAINTER aside it left------>
-                <div class="searchWidget">
-                    <input type="text" placeholder="Search Museums.." id="searchBoxId">
-                    <input type="button" value="Go!" id="searchGo">
-                </div>
-
-
-
-
-
-                <!------- CATEGORY BOX CONAINTER aside it left ------>
-                <div class="categoryWidget">
-                   <div class="categoryTitle">
-                    <h2 id="category">Categories</h2>
-                  </div>
-                    <div class="categoryBody">
-                        <ul class="categoryList">
-                            <li><a href="">Art</a></li>
-                            <li><a href="">Science</a></li>
-                            <li><a href="">Historic</a></li>
-                            <li><a href="">Suprise Me</a></li>
-                        </ul>
+            <div class="row">
+      
+                
+                <!------- SIDE BAR WIDGETS------>
+                <div class="columnRight">
+                    <!------- SEACRH BOX CONAINTER aside it left------>
+                    <div class="searchWidget">
+                        <input type="text" placeholder="Search Museums.." id="searchBoxId">
+                        <input type="button" value="Go!" id="searchGo" onclick="getMuseums()">
                     </div>
-                </div>    
+                    <!------- CATEGORY BOX CONAINTER aside it left ------>
+                    <div class="categoryWidget">
+                        <div class="categoryTitle">
+                            <h2 id="category">Categories</h2>
+                        </div>
+                        <div class="categoryBody">
+                            <ul class="categoryList">
+                                <li><a href="">Art</a></li>
+                                <li><a href="">Science</a></li>
+                                <li><a href="">Historic</a></li>
+                                <li><a href="">Suprise Me</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!------- PAGE CONTENT OF LIFSTS OF MUSEMSSSSSS!!!!! ------>
+
+                    <div class="columnLeft" >
+                 
+
+                        <div id="locationForCards">
+                            
+                       
+                        </div>
+                    </div>
             </div>
-
-
-
-
         </div>
     </div>
     <script src="C:\Users\Admin\Documents\MuseaArchivesHTML/Js/NavBar.js"></script>
+      <script src="C:\Users\Admin\Documents\MuseaArchivesHTML/Js/searchBarFunctions.js"></script>
 </body>
 
 </html>
