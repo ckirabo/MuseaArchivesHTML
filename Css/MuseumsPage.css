@@ -1,17 +1,96 @@
-
 /* For the search bar increasing focus so it increases.*/
-
-ul{
+ul {
 	list-style: none;
 }
 
-
-div.searchAndCategory {
-
-border-style: solid;
+a:hover {
+   background-color: 66cc99;
 }
 
-aside.sideContent{
-	padding: 20px;
-	background-color: grey;
+/*FOR THE SEARCH BAR & CATEGORY WIDGETS*/
+div.searchAndCategory {
+}
+
+div.searchWidget {
+	width: 250px;
+	background-color: #f1f1f1;
+	margin: 10px;
+	padding: 15px;
+	border: 3px solid #595959;
+	border-radius: 4px;
+	-webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+	-moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+	box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
+}
+
+input[type=text]:focus {
+	background-color: #eaeffa;
+	transition: ease-in-out, width .35s ease-in-out;
+}
+
+input[type=button]:focus {
+	background-color: #66cc99;
+	border-radius: 8px;
+}
+
+#searchGo {
+	border-radius: 8px;
+	font-size: 18px;
+}
+
+#searchGo input:focus {
+	background-color: #66cc99;
+}
+
+div.categoryWidget {
+	text-align: center;
+	width: 200px;
+	margin: 45px;
+	border: 3px solid #595959;
+	border-radius: 4px;
+	-webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+	-moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+}
+
+div.categoryTitle {
+	background-color: #f1f1f1;
+	padding: 3px;
+}
+
+ul.categoryList {
+	padding: 5px;
+}
+
+/* On screens that are less than 700px wide, make the SIDE CHANGE VIEW */
+@media screen and (max-width:700px) {
+
+	h1 {
+		text-align: center;
+	}
+
+	div.searchWidget {
+		width: 80%;
+		height: auto;
+		position: relative;
+	}
+
+	div.searchWidget a {
+		float: left;
+	}
+
+	/*Change the categories tab to a side nav button!!! that displays options in on overlay*/
+	div.categoryWidget {
+		display: none;
+	}
+
+	/*div.content {margin-left: 0;}* PAGE CONTEMT!!!!!!!!*/
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width:400px) {
+	div.searchWidget a {
+		text-align: center;
+		float: none;
+	}
+
 }
