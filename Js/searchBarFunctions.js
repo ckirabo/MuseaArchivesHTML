@@ -35,8 +35,12 @@ let lLink = document.createElement("li");
 
 let alink = document.createElement("a");
 
-alink.href = link;
+alink.setAttribute('href',link);
 alink.innerHTML = link;
+alink.target="_blank";
+alink.rel="noopener noreferrer";
+console.log(link);
+console.log(alink.href);
 
 
 ul.appendChild(lAddress);
@@ -54,6 +58,7 @@ card.appendChild(img);
 card.appendChild(cardBody);
 
 cardlocation.appendChild(card);
+
 
 }
 
